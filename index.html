@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+       background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg"); 
+       background-size: cover;
+       z-index: 1;
+        }
+        #loginbox{
+            border: 4px solid rgb(255, 254, 254);
+            width: 300px;
+            height: 500px;
+            border-radius: 8px;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        #logo{
+            color: rgb(255, 255, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: large;
+            top: 0px;
+            margin-top: 0px;
+        }
+        #x{
+            font-size: 40px;
+        }
+        #logins{
+            border-radius: 0px;
+            outline: none;
+            height: 35px;
+            width: 200px;
+            opacity: 0.8;
+            font-family: "Chakra Petch", sans-serif;
+            color: white;
+            font-weight: bold;
+            background-color: transparent;
+            -webkit-text-fill-color: white;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 0px;
+            animation: boxanim1 1s backwards
+        }
+        #logins:hover{
+            opacity: 1;
+            animation: boxanim 1s forwards;
+        }
+        @keyframes boxanim{
+            from{border-bottom: 0px;}
+            to{border-bottom: 2px solid white;}
+        }
+        @keyframes boxanim1{
+            from{border-bottom: 2px solid white;}
+            to{border-bottom: 0px;}
+        }
+        #submit{
+            margin-top: 110px;
+            width: 240px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            background-image: linear-gradient(8deg,rgb(0, 0, 0),rgb(255, 255, 255));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            border-radius: 6px;
+        }
+        #submit:hover{
+            animation: subanim 3s infinite;
+        }
+        @keyframes subanim{
+            from{border: 0px;}
+            to{border: 1px solid rgb(0, 255, 217);}
+        }
+        #nc{
+            color: white;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+        }
+        #nc:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+        .container {
+  display: inline-block;
+  margin-top: 130px;
+}
+.typed {
+  overflow: hidden;
+  border-right: 10px solid rgb(255, 255, 255); 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  animation: typing 3.5s steps(40, end), blink-cursor .50s step-end infinite;
+  color: white;
+  font-size: 34px;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-cursor {
+  from, to { border-color: rgb(255, 255, 255) }
+  50% { border-color: transparent }
+}
+#movestop{
+    color: white;
+}
+body{
+    display: flex;
+}
+#loginimg{
+    border-radius: 10px;
+    margin-left: 60px;
+}
+#split{
+    width: 180px;
+}
+#icons{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 35px;
+    opacity: 0.6;
+}
+#icons:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div id="loginbox">
+        <p id="logo">Ne<span id="x">x</span>tGen</p>
+        <form>
+        <input onclick="focus" required type="email" placeholder="Enter E-mail/Phone number" id="logins" pattern="+gmail.com" tabindex="1"><br><br>
+        <input required type="password" placeholder="Enter Password" id="logins"><br><br><br>
+        <span style="color: white; font-family: Dancing Script, cursive;font-weight: bold;">continue</span>
+        <hr id="split">
+        <span style="color: white; font-family: Dancing Script, cursive;font-weight: bold;">With</span><br><br><br>
+        <div style="display: flex;margin-left: 41px;">
+        <i id="icons" class="fa-brands fa-google"></i><br>
+        <i id="icons" class="fa-brands fa-facebook"></i>
+        <i id="icons" class="fa-brands fa-x-twitter"></i>
+    </div>
+        <button id="submit">Login</button>
+        <p id="nc">Not a customer ? Then Signup.</p>
+        </form>
+</center>
+<div class="container">
+    <img id="loginimg" src="https://media.istockphoto.com/id/1271787791/photo/login-and-password-cyber-security-concept-data-protection-and-secured-internet-access.jpg?b=1&s=612x612&w=0&k=20&c=chTj1lESJmO93wW5sxlk6GCBm3S4RZlT5w8hXsU8RLE=">
+    <p class="typed">Login to get access into The future.</p>
+  </div>
+</div>
+</body>
+</html>
